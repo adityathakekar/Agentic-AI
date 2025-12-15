@@ -12,6 +12,13 @@ Venture Capital research is time-consuming. Associates spend hours gathering fra
 ## 🏗️ System Architecture
 We implemented a **Sequential Handoff Pattern**. The system mimics a linear assembly line where data is refined at each step.
 
+## 🔮 Future Roadmap
+While this MVP demonstrates the core Agentic Architecture, the full vision includes:
+* **Vector Database Integration (RAG):** To store and recall previous investment memos.
+* **Human-in-the-Loop Mode:** allowing a senior partner to approve the "Skeptic's" findings before the report is generated.
+* **Multi-Modal Analysis:** Using Gemini 1.5 Pro to analyze PDF pitch decks and charts, not just text search.
+
+
 ### The Agent Workflow
 ```mermaid
 graph LR
@@ -20,3 +27,5 @@ graph LR
     C -->|Raw Data| B
     B -->|Synthesized Findings| D(📝 Editor Agent)
     D -->|Formatting Rules| E[📄 Final Investment Memo]
+
+
